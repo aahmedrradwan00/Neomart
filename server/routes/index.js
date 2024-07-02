@@ -14,15 +14,15 @@ const reviewRouter = require('./review.router');
 const mountRoutes = (app) => {
     app.use('/api/v1/users', userRouter);
     app.use('/api/v1/auth', authRouter);
-    app.use('/api/v1/categorys', categoryRouter);
-    app.use('/api/v1/subcategorys', subcategoryRouter);
-    app.use('/api/v1/coupons', couponRouter);
-    app.use('/api/v1/brands', brandRouter);
-    app.use('/api/v1/products', productRouter);
-    app.use('/api/v1/wishlists', wishlistRouter);
-    app.use('/api/v1/carts', cartRouter);
-    app.use('/api/v1/orders', orderRouter);
-    app.use('/api/v1/reviews', reviewRouter);
+    app.use('/api/v1/category', categoryRouter);
+    app.use('/api/v1/subcategory', subcategoryRouter);
+    app.use('/api/v1/coupon', couponRouter);
+    app.use('/api/v1/brand', brandRouter);
+    app.use('/api/v1/product', productRouter);
+    app.use('/api/v1/wishlist', wishlistRouter);
+    app.use('/api/v1/cart', cartRouter);
+    app.use('/api/v1/order', orderRouter);
+    app.use('/api/v1/review', reviewRouter);
 };
 
 module.exports = mountRoutes;
