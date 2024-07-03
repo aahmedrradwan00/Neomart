@@ -22,7 +22,7 @@ exports.signup = catchAsync(async (req, res, next) => {
     // create token
     const token = createToken(newUser._id);
     // create confirmationLink
-    const url = `http://127.0.0.1:3000/api/v1/auth/activateAccount/${token}`;
+    const url = `https://neomart.vercel.app/api/v1/auth/activateAccount/${token}`;
     // send email
     await sendEmail({
         to: req.body.email,
